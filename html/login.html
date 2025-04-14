@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <!-- <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <span>(+01) - 2345 - 6789</span>
+            <span>Our location</span>
+          </div>
+          <p class="header__alert-news">
+            Super Values Deals - Save more coupons
+          </p>
+          <a href="login-register.html" class="header__top-action">
+            Log In / Sign Up
+          </a>
+        </div>
+      </div> -->
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            class="nav__logo-img"
+            src="../images/mst.png"
+            alt="website logo"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="login.html" class="nav__link">My Account</a>
+            </li>
+            <li class="nav__item">
+              <a href="login.html" class="nav__link active-link"
+                >Login</a
+              >
+            </li>
+          </ul>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Search For Items..."
+              class="form__input"
+            />
+            <button class="search__btn">
+             
+            </button>
+          </div>
+        </div>
+        
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== BREADCRUMB ===============-->
+      <section class="breadcrumb">
+        <ul class="breadcrumb__list flex container">
+          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+          <li><span class="breadcrumb__link">></span></li>
+          <li><span class="breadcrumb__link">Login / Register</span></li>
+        </ul>
+      </section>
+
+      <!--=============== LOGIN-REGISTER ===============-->
+      <section class="login-register section--lg">
+        <div class="login-register__container container grid">
+          <!-- Login Section -->
+          <div class="login">
+            <h3 class="section__title">Login</h3>
+            <form class="form grid" id="login-form" onsubmit="loginUser(event)">
+              <input
+                type="email"
+                id="login-email"
+                placeholder="Your Email"
+                class="form__input"
+                required
+              />
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Your Password"
+                class="form__input"
+                required
+              />
+              <div class="form__btn">
+                <button type="submit" class="btn">Login</button>
+              </div>
+            </form>
+          </div>
+      
+          <!-- Register Section -->
+          <div class="register">
+            <h3 class="section__title">Create an Account</h3>
+            <form class="form grid" id="register-form" onsubmit="registerUser(event)">
+              <input
+                type="text"
+                id="reg-username"
+                placeholder="Username"
+                class="form__input"
+                required
+              />
+              <input
+                type="email"
+                id="reg-email"
+                placeholder="Your Email"
+                class="form__input"
+                required
+              />
+              <input
+                type="password"
+                id="reg-password"
+                placeholder="Your Password"
+                class="form__input"
+                required
+              />
+              <input
+                type="password"
+                id="reg-confirm"
+                placeholder="Confirm Password"
+                class="form__input"
+                required
+              />
+              <div class="form__btn">
+                <button type="submit" class="btn">Submit & Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== NEWSLETTER ===============-->
+      <section class="newsletter section">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img
+              src="./assets/img/icon-email.svg"
+              alt=""
+              class="newsletter__icon"
+            />
+            Sign in to MyStyle
+          </h3>
+          <p class="newsletter__description">
+            ...and receive Rs.25 coupon for first shopping.
+          </p>
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src="../images/ft.png" alt="" />
+          <h4>Contact</h4>
+          <p><strong>Address:</strong> Wagholi, Pune Maharashtra</p>
+          <p><strong>Mobile:</strong>+91 6737291739</p>
+          <p><strong>Hours:</strong>10:00am - 18:00pm, Man - Sat</p>
+          <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-pinterest"></i>
+              <i class="fa fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <h4>About Us</h4>
+          <a href="#abc">About us</a>
+          <a href="#abc">Delievery Information</a>
+          <a href="#abc">Privacy Policy</a>
+          <a href="#abc">Terms & Conditions</a>
+          <a href="#abc">Contact us</a>
+        </div>
+  
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#abc">Sign In</a>
+          <a href="#abc">View Cart</a>
+          <a href="#abc">My Wishlist</a>
+          <a href="#abc">Track My Order</a>
+          <a href="#abc">Help</a>
+        </div>
+        <div class="col install">
+          <h4>Install App</h4>
+          <p>From PlayStore or Google Playstore</p>
+          <div class="row">
+            <img src="../images/pay/app.jpg" alt="" />
+            <img src="../images/pay/play.jpg" alt="" />
+          </div>
+          <p>Secured and Protected. State Bank Authorized</p>
+          <img src="../images/pay/pay.png" alt="" />
+        </div>
+        <div class="copyright">
+          <p>Developed by <a style="text-decoration: underline;" href="https://www.instagram.com/iammusaibahmed?igsh=MTJhdGhjbWFpdzc5Yg==">Musaib Ahmed.</a></p>
+        </div>
+      </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      function registerUser(e) {
+        e.preventDefault();
+        
+        const username = document.getElementById("reg-username").value;
+        const email = document.getElementById("reg-email").value;
+        const password = document.getElementById("reg-password").value;
+        const confirm = document.getElementById("reg-confirm").value;
+        
+        if (password !== confirm) {
+          alert("❌ Passwords do not match!");
+          return;
+        }
+        
+        const user = { username, email, password };
+        localStorage.setItem("user", JSON.stringify(user));
+        
+        alert("✅ Registered successfully!");
+        document.getElementById("register-form").reset();
+      }
+    
+      function loginUser(e) {
+        e.preventDefault();
+        
+        const email = document.getElementById("login-email").value;
+        const password = document.getElementById("login-password").value;
+        
+        const storedUser = JSON.parse(localStorage.getItem("user"));
+        
+        if (
+          storedUser &&
+          storedUser.email === email &&
+          storedUser.password === password
+        ) {
+          alert("✅ Login successful!");
+          document.getElementById("login-form").reset();
+        } else {
+          alert("❌ Invalid credentials!");
+        }
+      }
+    
+      // Add or Update deliveryDateOption in Cart
+      function updateDeliveryDateOption(productId, deliveryDateOption) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+    
+        if (cart[productId]) {
+          // If product already exists in cart, update deliveryDateOption
+          cart[productId].deliveryDateOption = deliveryDateOption;
+        } else {
+          // If product doesn't exist, create a new entry with the given option
+          cart[productId] = {
+            quantity: 1, // You can update this based on your actual product quantity logic
+            deliveryDateOption: deliveryDateOption
+          };
+        }
+    
+        // Save the updated cart back to localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert("✅ Delivery date option updated!");
+      }
+    
+      // Example: Update deliveryDateOption for product "0" (for instance 2-day delivery)
+      // Call this function wherever you need it in your code.
+      // updateDeliveryDateOption("0", 2); // For updating delivery option of product 0 to 2-day delivery.
+      
+    </script>
+    
+  </body>
+</html>
