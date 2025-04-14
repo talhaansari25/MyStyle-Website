@@ -113,9 +113,14 @@
               />
               <div class="form__btn">
                 <button type="submit" class="btn">Login</button>
+                <button id="logout-btn" class="btn" onclick="logoutUser()" style="display: none;">
+                  Logout
+                </button>
+                
               </div>
             </form>
           </div>
+
       
           <!-- Register Section -->
           <div class="register">
@@ -307,6 +312,63 @@
       // updateDeliveryDateOption("0", 2); // For updating delivery option of product 0 to 2-day delivery.
       
     </script>
+    <script>
+      function registerUser(e) {
+        e.preventDefault();
+    
+        const username = document.getElementById("reg-username").value;
+        const email = document.getElementById("reg-email").value;
+        const password = document.getElementById("reg-password").value;
+        const confirm = document.getElementById("reg-confirm").value;
+    
+        if (password !== confirm) {
+          alert("❌ Passwords do not match!");
+          return;
+        }
+    
+        const user = { username, email, password };
+        localStorage.setItem("user", JSON.stringify(user));
+    
+        alert("✅ Registered successfully!");
+        document.getElementById("register-form").reset();
+      }
+    
+      function loginUser(e) {
+        e.preventDefault();
+    
+        const email = document.getElementById("login-email").value;
+        const password = document.getElementById("login-password").value;
+    
+        const storedUser = JSON.parse(localStorage.getItem("user"));
+    
+        if (
+          storedUser &&
+          storedUser.email === email &&
+          storedUser.password === password
+        ) {
+          alert("✅ Login successful!");
+          document.getElementById("login-form").reset();
+          document.getElementById("logout-btn").style.display = "inline-block"; // Show logout
+        } else {
+          alert("❌ Invalid credentials!");
+        }
+      }
+    
+      function logoutUser() {
+        localStorage.clear(); // Clears all localStorage data
+        alert("👋 Logged out successfully!");
+        document.getElementById("logout-btn").style.display = "none";
+      }
+    
+      // Optional: Show logout button if user already logged in
+      window.onload = () => {
+        const storedUser = JSON.parse(localStorage.getItem("user"));
+        if (storedUser) {
+          document.getElementById("logout-btn").style.display = "inline-block";
+        }
+      };
+    </script>
+    
     
   </body>
 </html>
