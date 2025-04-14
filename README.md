@@ -1,4 +1,4 @@
-# Astore - Ecommerce website
+# MyStyle - Ecommerce website
 
 It is a Ecommerce website with all basic functionalities of Ecommerce website.
 
