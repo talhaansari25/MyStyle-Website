@@ -37,8 +37,8 @@ function showProductData() {
         <p class="product-description" onclick="redirectToProductDetails(%productId3%)">%description%</p>
         <div class="product-price" onclick="redirectToProductDetails(%productId4%)">
           <span class="discount-percentage">%discount%% OFF</span>
-          <span class="price-old">Rs.%price%</span>
-          <span class="price-new">Rs.%newPrice%</span>
+          <span class="price-old">$%price%</span>
+          <span class="price-new">$%newPrice%</span>
         </div>
         <button class="add-to-cart"  onclick="addToCart(%data.id%)"">Add to Cart</button>
       </div>
@@ -232,7 +232,7 @@ function updateCart() {
           detailsContainer.appendChild(productName);
 
           var productPrice = document.createElement("span");
-        productPrice.textContent = "Rs." + data.price + ".00";
+        productPrice.textContent = "$" + data.price + ".00";
           detailsContainer.appendChild(productPrice);
         total = total + data.price;
         console.log("total: "+total);
@@ -241,7 +241,7 @@ function updateCart() {
           removeButton.addEventListener("click", function () {
             removeFromCart(index);
           });
-        document.getElementById("cart-total").innerHTML = "Total: Rs." + total + ".00";
+        document.getElementById("cart-total").innerHTML = "Total: $" + total + ".00";
           detailsContainer.appendChild(removeButton);
 
           listItem.appendChild(detailsContainer);
@@ -295,8 +295,8 @@ function searchProducts(query) {
         <p class="product-description" onclick="redirectToProductDetails(%productId3%)">%description%</p>
         <div class="product-price" onclick="redirectToProductDetails(%productId4%)">
           <span class="discount-percentage">%discount%% OFF</span>
-          <span class="price-old">Rs.%price%</span>
-          <span class="price-new">Rs.%newPrice%</span>
+          <span class="price-old">$%price%</span>
+          <span class="price-new">$%newPrice%</span>
         </div>
         <button class="add-to-cart"  onclick="addToCart(%data.id%)"">Add to Cart</button>
       </div>
@@ -413,7 +413,7 @@ function updateCart() {
           detailsContainer.appendChild(productName);
 
           var productPrice = document.createElement("span");
-        productPrice.textContent = "Rs." + data.price + ".00";
+        productPrice.textContent = "$" + data.price + ".00";
           detailsContainer.appendChild(productPrice);
         total = total + data.price;
         console.log("total: "+total);
@@ -422,7 +422,7 @@ function updateCart() {
           removeButton.addEventListener("click", function () {
             removeFromCart(index);
           });
-        document.getElementById("cart-total").innerHTML = "Total: Rs." + total + ".00";
+        document.getElementById("cart-total").innerHTML = "Total: $" + total + ".00";
           detailsContainer.appendChild(removeButton);
 
           listItem.appendChild(detailsContainer);
