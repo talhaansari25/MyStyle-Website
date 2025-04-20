@@ -22,8 +22,8 @@ let html = `<div class="img-section">
     <h6 data-aos="fade-up" data-aos-duration="1500">%brand%</h6>
     <h5 data-aos="fade-up" data-aos-duration="1500">%title%</h5>
     <div class="price" data-aos="zoom-out" data-aos-duration="1500">
-      <h3 class="old-price" data-aos="fade-up" data-aos-duration="1500" >Rs.%price%.00</h3>
-      <h3 data-aos="fade-up" data-aos-duration="1500">Rs.%newPrice%</h3>
+      <h3 class="old-price" data-aos="fade-up" data-aos-duration="1500" >$%price%.00</h3>
+      <h3 data-aos="fade-up" data-aos-duration="1500">$%newPrice%</h3>
     </div>
 
     <div class="select-group" data-aos="fade-up" data-aos-duration="1500">
@@ -169,7 +169,7 @@ function updateCart() {
           detailsContainer.appendChild(productName);
 
           var productPrice = document.createElement("span");
-        productPrice.textContent = "Rs." + data.price + ".00";
+        productPrice.textContent = "$" + data.price + ".00";
           detailsContainer.appendChild(productPrice);
         total = total + data.price;
         console.log("total: "+total);
@@ -178,7 +178,7 @@ function updateCart() {
           removeButton.addEventListener("click", function () {
             removeFromCart(index);
           });
-        document.getElementById("cart-total").innerHTML = "Total: Rs." + total + ".00";
+        document.getElementById("cart-total").innerHTML = "Total: $" + total + ".00";
           detailsContainer.appendChild(removeButton);
 
           listItem.appendChild(detailsContainer);
@@ -273,8 +273,8 @@ flag = false;
         <p class="product-description">%description%</p>
         <div class="product-price" >
           <span class="discount-percentage">%discount%% OFF</span>
-          <span class="price-old">Rs.%price%</span>
-          <span class="price-new">Rs.%newPrice%</span>
+          <span class="price-old">$%price%</span>
+          <span class="price-new">$%newPrice%</span>
         </div>
         <button class="add-to-cart">Add to Cart</button>
       </div>
