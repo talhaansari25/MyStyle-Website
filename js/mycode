@@ -140,7 +140,7 @@ async function loadNames() {
   //         {
 
   //         console.log("inside iffffffffffffffffffffffffffffffff");
-  //          html = '<a href="cart.html" onclick=getId('+product.id+')><div class="pro"><img id="imgUrl'+product.id+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>Rs.%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>'
+  //          html = '<a href="cart.html" onclick=getId('+product.id+')><div class="pro"><img id="imgUrl'+product.id+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>$%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>'
   //         newHtml = html.replace('%src%',product.image);
   //         newHtml =  newHtml.replace('%category%',product.category);
   //         newHtml = newHtml.replace('%brand%',product.title);
@@ -173,7 +173,7 @@ async function loadNames() {
           {
             
           console.log("product:"+product);
-           html = '<a href="cart.html" onclick=getId('+product.id+')><div class="pro"><img id="imgUrl'+product.id+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>Rs.%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>'
+           html = '<a href="cart.html" onclick=getId('+product.id+')><div class="pro"><img id="imgUrl'+product.id+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>$%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>'
           newHtml = html.replace('%src%',product.image);
           newHtml =  newHtml.replace('%category%',product.category);
           newHtml = newHtml.replace('%brand%',product.title);
@@ -282,7 +282,7 @@ async function loadNames() {
 //         var element = document.querySelector('.products__show');
 //         var newHTML;
 //         // html =  '<div id="main" class="main1" href="cart.html" onclick="cart(%pid%)"><a href="cart.html" ><p style="display:none class="pid"></p><img id="image" src="%src%" alt="" ><div class="sale__button"><span class="sale__text">Sale</span></div><i class="fa fa-eye myIcon" style="font-size:2rem"></i><i class="fa fa-shopping-cart myIcon myIcon1" style="font-size:2rem"></i><div id="category" ><strong class="txt">Category:  </strong><span class="txt">%category%</span></div><div id="rating"><strong class="txt">Rating:  </strong><span class="txt">%rating%</span></div><div id="price"><strong class="txt">Price:   </strong><span class="txt">%price%</div></span> </a></div>';
-//         html = '<a href="cart.html" onclick=getId('+product.id+')><div class="pro"><img id="imgUrl'+product.id+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>Rs.%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>'
+//         html = '<a href="cart.html" onclick=getId('+product.id+')><div class="pro"><img id="imgUrl'+product.id+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>$%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>'
 
 //         newHTML = html.replace('%src%',product.image);
 //         newHTML = newHTML.replace('%pid%',product.id);
@@ -337,7 +337,7 @@ async function loadNames() {
         
 //         var element = document.querySelector('.products__show');
 //         var newHTML;
-//         html = '<a href="cart.html" onclick=getId('+product.id+')><div class="pro"><img id="imgUrl'+product.id+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>Rs.%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>'
+//         html = '<a href="cart.html" onclick=getId('+product.id+')><div class="pro"><img id="imgUrl'+product.id+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>$%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>'
     
 //         newHtml = html.replace('%src%',product.image);
 //         newHtml =  newHtml.replace('%category%',product.category);
@@ -469,7 +469,7 @@ async function loadProducts(){
          
 
 
-           html = '<a href=cart.html"><div class="pro" onclick=getProductDesc('+i+')>< <img id="imgUrl'+i+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>Rs.%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>';
+           html = '<a href=cart.html"><div class="pro" onclick=getProductDesc('+i+')>< <img id="imgUrl'+i+'" src="%src%" alt=""><div class="des"><span>%category%</span><h5>%brand%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>$%price%.00</h4></div><a href="#"><i class="fa fa-shopping-cart cart" style="font-size: 1.2rem;"></i></a></div></a>';
           newHtml = html.replace('%src%',data.images[0]);
           newHtml = newHtml.replace('%id%',data.id)
           newHtml =  newHtml.replace('%category%',data.category.name);
@@ -523,7 +523,7 @@ function addToCart()
   var name=localStorage.getItem("pid");
   console.log(products1[name-1]);
   var element = document.querySelector('.shopping-cart');
-   html = '<div class="pro" onclick="cart(2)"><img src="%image%" alt=""><div class="des"><span>%brand%</span><h5>%title%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>Rs.%price%.00</h4><h4 class="totalPrice"><strong>Total: </strong>Rs.%total%.00</h4></div></div>';
+   html = '<div class="pro" onclick="cart(2)"><img src="%image%" alt=""><div class="des"><span>%brand%</span><h5>%title%</h5><div class="star"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><h4>$%price%.00</h4><h4 class="totalPrice"><strong>Total: </strong>$%total%.00</h4></div></div>';
   newHtml = html.replace('%image%',products1[name-1].image);
   newHtml = newHtml.replace('%brand%',products1[name-1].category);
   newHtml = newHtml.replace('%title%',products1[name-1].title);
@@ -611,7 +611,7 @@ async function setCart()
          console.log(data);
 
           
-          html = '<div class="single-pro-image"><img src="%mainImage%" width="100%" id="MainImg" alt=""><div class="small-img-group"><div class="small-img-col"><img src="%small1%" alt="" width="100%" class="small-img" onclick="changeImage(this)"></div><div class="small-img-col"><img src="%small2%" alt="" width="100%" class="small-img" onclick="changeImage(this)"></div><div class="small-img-col"><img src="%small3%" alt="" width="100%" class="small-img" onclick="changeImage(this)"></div><div class="small-img-col"><img src="%small4%" alt="" width="100%" class="small-img" onclick="changeImage(this)"></div></div></div><div class="single-pro-detials"><h6>Home / T-shirts</h6><h5>%title%</h5><h2>Rs.%price%.00</h2><select ><option>Select Size</option><option>XL</option><option>XXL</option><option>small</option><option>large</option></select><input type="number" value="1" min="1" class="value"><button onclick="addToCart(this.div)">Add To Cart</button><h4>Product Details</h4><span>%des%</span></div>'
+          html = '<div class="single-pro-image"><img src="%mainImage%" width="100%" id="MainImg" alt=""><div class="small-img-group"><div class="small-img-col"><img src="%small1%" alt="" width="100%" class="small-img" onclick="changeImage(this)"></div><div class="small-img-col"><img src="%small2%" alt="" width="100%" class="small-img" onclick="changeImage(this)"></div><div class="small-img-col"><img src="%small3%" alt="" width="100%" class="small-img" onclick="changeImage(this)"></div><div class="small-img-col"><img src="%small4%" alt="" width="100%" class="small-img" onclick="changeImage(this)"></div></div></div><div class="single-pro-detials"><h6>Home / T-shirts</h6><h5>%title%</h5><h2>$%price%.00</h2><select ><option>Select Size</option><option>XL</option><option>XXL</option><option>small</option><option>large</option></select><input type="number" value="1" min="1" class="value"><button onclick="addToCart(this.div)">Add To Cart</button><h4>Product Details</h4><span>%des%</span></div>'
           newHtml = html.replace('%mainImage%',data.images[0]);
           newHtml = newHtml.replace('%small1%',data.images[0]);
           newHtml = newHtml.replace('%small2%',data.images[1]);
